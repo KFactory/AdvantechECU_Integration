@@ -6,8 +6,27 @@
         xmlns:local="clr-namespace:ECU1251HttpClient"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Title="ECU1251 Client" Height="450" Width="800">
+        Title="ECU1251 Client" Height="525" Width="650">
     <Grid>
+
+        <Label Content="IP Address : " HorizontalAlignment="Left" Margin="10,23,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TB_IpAddress" Margin="90,23,10,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="26" Padding="4,3,0,0"/>
+
+        <Label Content="Password : " HorizontalAlignment="Left" Margin="10,54,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TB_Password" Text="00000000" Margin="90,54,10,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="26" Padding="4,3,0,0"/>
+
+        <Label Content="Token : " HorizontalAlignment="Left" Margin="10,153,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TB_Token" Margin="90,153,10,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="26" Padding="4,3,0,0"/>
+
+        <Button x:Name="BTN_Login" Content="Login" Margin="90,99,10,0" VerticalAlignment="Top" Height="30" Click="BTN_Login_Click"/>
+
+        <Label Content="Endpoint : " HorizontalAlignment="Left" Margin="10,184,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TB_Endpoint" Text="/data/tags/" Margin="90,184,10,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="26" Padding="4,3,0,0"/>
+
+        <Label Content="Response : " HorizontalAlignment="Left" Margin="10,279,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TB_Response" Margin="90,279,10,25" TextWrapping="Wrap" VerticalScrollBarVisibility="Visible" Padding="4,3,0,0"/>
+
+        <Button x:Name="BTN_SendGetRequest" Content="Send 'Get' Request" Margin="90,225,10,0" VerticalAlignment="Top" Height="30" Click="BTN_SendGetRequest_Click"/>
 
     </Grid>
 </Window>

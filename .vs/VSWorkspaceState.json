@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ECU1251HttpClient",
+    "\\ECU1251HttpClient\\ECU1251HttpClient"
   ],
-  "SelectedNode": "\\C:\\Users\\ahmed\\Source\\Repos\\AdvantechECU_Integration",
+  "SelectedNode": "\\ECU1251HttpClient\\ECU1251HttpClient.sln",
   "PreviewInSolutionExplorer": false
 }
